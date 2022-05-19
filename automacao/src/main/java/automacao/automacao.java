@@ -25,6 +25,9 @@ public class automacao {
         //definindo site o que será feito busca
         element.sendKeys("loja click Bike");
         
+        //enviando comando de busca  
+        element.submit();
+        
        
        
     }
