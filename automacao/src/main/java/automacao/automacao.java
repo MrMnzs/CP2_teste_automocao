@@ -31,7 +31,7 @@ public class automacao {
         //acessando site da busca
         driver.get("https://lojaclickbike.com.br/");
         
-       
+        //nevegar até menu loja
         driver.get("https://lojaclickbike.com.br/loja/?v=9a5a5f39f4c7");
         driver.navigate();       
     }
