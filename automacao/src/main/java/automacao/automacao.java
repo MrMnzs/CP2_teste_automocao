@@ -21,17 +21,11 @@ public class automacao {
 
         //Fazendo uma busca atraves do elemento name
         WebElement element = driver.findElement(By.name("q"));
-
+        
         //definindo site o que será feito busca
         element.sendKeys("loja click Bike");
         
-        // Submit the form
-        element.submit();
-
-        // Printing the page title - just for example
-        System.out.println("Page title is: " + driver.getTitle());
-
-		// If you want to Close the browser, uncomment this line
-		// driver.quit();
+       
+       
     }
 }
