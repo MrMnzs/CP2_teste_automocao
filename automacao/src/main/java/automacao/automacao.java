@@ -1,26 +1,19 @@
 package automacao;
 import org.openqa.selenium.By;
 import org.openqa.selenium.*;
-
 import org.openqa.selenium.chrome.*;
-
-	import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+
 public class automacao {
 	public static void main(String[] args) {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\eclipse-workspace\\automacao\\src\\main\\java\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
 		
-		
-		
-		// option 1 to use existing profile
-		//WebDriver driver = new FirefoxDriver(options);
-		// option 2 to use existing profile
-		//WebDriver driver = new FirefoxDriver(capabilities);
-		
+		//Instanciando um objeto WebDriver				
 		WebDriver driver = new ChromeDriver();
 
         // Opening Google
