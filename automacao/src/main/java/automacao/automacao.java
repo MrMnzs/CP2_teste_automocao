@@ -39,8 +39,9 @@ public class automacao {
        driver.get("https://lojaclickbike.com.br/loja/?v=9a5a5f39f4c7");
        driver.navigate();       
 
-       //localizando elemento de busca no google
-       WebElement element = driver.findElement(By.name("q"));
+       //nevegar até menu sobre
+        driver.get("https://lojaclickbike.com.br/sobre/?v=9a5a5f39f4c7");
+        driver.navigate(); 
 
 
     }
