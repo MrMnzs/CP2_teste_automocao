@@ -10,28 +10,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class automacao {
 	public static void main(String[] args) {
 		
-		
+		//definido navegador 
 		System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
 		
 		//Instanciando um objeto WebDriver				
 		WebDriver driver = new ChromeDriver();
 
-        //Abrindo o google no chrome
+		//Abrindo Google para buscar site
         driver.get("http://www.google.com");
 
-        //Fazendo uma busca atraves do elemento name
-        WebElement element = driver.findElement(By.name("q"));
-
-        //definindo site o que será feito busca
-        element.sendKeys("loja click Bike");
-        
-        // Submit the form
-        element.submit();
-
-        // Printing the page title - just for example
-        System.out.println("Page title is: " + driver.getTitle());
-
-		// If you want to Close the browser, uncomment this line
-		// driver.quit();
     }
 }
