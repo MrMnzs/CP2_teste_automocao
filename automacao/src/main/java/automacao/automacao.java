@@ -10,29 +10,38 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class automacao {
 	public static void main(String[] args) {
 		
-		//definido navegador a ser aberto
-		System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
+
 		
-		//Instanciando um objeto WebDriver				
-		WebDriver driver = new ChromeDriver();
 
-        //Abrindo o google no chrome
-        driver.get("http://www.google.com");
+		   //definido navegador 
+		   System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
+		
+		   //Instanciando um objeto WebDriver				
+		   WebDriver driver = new ChromeDriver();
 
-        //Fazendo uma busca atraves do elemento name
-        WebElement element = driver.findElement(By.name("q"));
-        
-        //definindo site o que será feito busca
-        element.sendKeys("loja click Bike");
-        
-        //enviando comando de busca  
-        element.submit();
-        
-        //acessando site da busca
-        driver.get("https://lojaclickbike.com.br/");
-        
-        //nevegar até menu loja
-        driver.get("https://lojaclickbike.com.br/loja/?v=9a5a5f39f4c7");
-        driver.navigate();       
+		   //Abrindo Google para buscar site
+       driver.get("http://www.google.com");
+
+
+       //Fazendo uma busca atraves do elemento name
+       WebElement element = driver.findElement(By.name("q"));
+
+       //definindo site o que serï¿½ feito busca
+       element.sendKeys("loja click Bike");
+
+       //enviando comando de busca  
+       element.submit();
+
+       //acessando site da busca
+       driver.get("https://lojaclickbike.com.br/");
+
+       //nevegar atï¿½ menu loja
+       driver.get("https://lojaclickbike.com.br/loja/?v=9a5a5f39f4c7");
+       driver.navigate();       
+
+       //localizando elemento de busca no google
+       WebElement element = driver.findElement(By.name("q"));
+
+
     }
 }
