@@ -1,16 +1,16 @@
 package automacao;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class automacao {
 	public static void main(String[] args) {
 		
-		
+		//definido navegador a ser aberto
 		System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
 		
 		//Instanciando um objeto WebDriver				
@@ -31,7 +31,8 @@ public class automacao {
         //acessando site da busca
         driver.get("https://lojaclickbike.com.br/");
         
-        
        
+        driver.get("https://lojaclickbike.com.br/loja/?v=9a5a5f39f4c7");
+        driver.navigate();       
     }
 }
