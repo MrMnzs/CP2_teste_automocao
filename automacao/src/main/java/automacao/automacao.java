@@ -12,14 +12,13 @@ public class automacao {
 		
 
 		
+       //definido navegador 
+       System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
+	
+       //Instanciando um objeto WebDriver				
+       WebDriver driver = new ChromeDriver();
 
-		   //definido navegador 
-		   System.setProperty("webdriver.chrome.driver", "src\\main\\java\\chromedriver.exe");
-		
-		   //Instanciando um objeto WebDriver				
-		   WebDriver driver = new ChromeDriver();
-
-		   //Abrindo Google para buscar site
+       //Abrindo Google para buscar site
        driver.get("http://www.google.com");
 
 
