@@ -18,6 +18,9 @@ public class automacao {
 
 		//Abrindo Google para buscar site
         driver.get("http://www.google.com");
+        
+        //localizando elemento de busca no google
+        WebElement element = driver.findElement(By.name("q"));
 
     }
 }
