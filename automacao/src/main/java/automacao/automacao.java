@@ -16,14 +16,14 @@ public class automacao {
 		//Instanciando um objeto WebDriver				
 		WebDriver driver = new ChromeDriver();
 
-        // Opening Google
+        //Abrindo o google no chrome
         driver.get("http://www.google.com");
 
-        // q its the search box name/ID
+        //Fazendo uma busca atraves do elemento name
         WebElement element = driver.findElement(By.name("q"));
 
-        // Seaching for Juliano Marcos Martins - me
-        element.sendKeys("FIAP");
+        //definindo site o que será feito busca
+        element.sendKeys("loja click Bike");
         
         // Submit the form
         element.submit();
