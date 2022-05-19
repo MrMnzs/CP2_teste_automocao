@@ -28,7 +28,10 @@ public class automacao {
         //enviando comando de busca  
         element.submit();
         
-       
+        //acessando site da busca
+        driver.get("https://lojaclickbike.com.br/");
+        
+        
        
     }
 }
